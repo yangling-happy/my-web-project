@@ -1,0 +1,71 @@
+h1 {
+  color: blueviolet;
+}
+p {
+  color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+}
+hr {
+  color: blue;
+}
+h4 {
+  color: aqua;
+}
+
+.responsive {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 70%;
+}
+
+/* 当屏幕宽度小于600px时，进一步缩小图片 */
+@media (max-width: 600px) {
+  .responsive {
+    max-width: 80%; /* 在小屏幕上占容器的80%宽度 */
+    margin: 0 auto; /* 居中显示 */
+  }
+}
+
+.u-textCenter {
+  text-align: center;
+}
+/* 1. 清除 body、html 的默认内外边距 */
+body,
+html {
+  margin: 0; /* 清除默认外边距 */
+  padding: 0; /* 清除默认内边距 */
+  box-sizing: border-box; /* 可选：方便后续宽高计算 */
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* 2. 确保 nav 自身没有多余边距 */
+.navContainer {
+  margin: 0; /* 清除 nav 自身外边距 */
+  padding: 0; /* 清除 nav 自身内边距（如果有） */
+}
+
+.root {
+  --primary: #170dd0;
+}
+
+.navTitle {
+  color: white;
+  font-size: medium;
+  margin: 0;
+  padding: 8px 16px;
+}
+.navContainer {
+  background-color: #170dd0;
+}
+
+.u-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.subContainers {
+  flex-basis: 20%;
+  flex-grow: 2;
+}
