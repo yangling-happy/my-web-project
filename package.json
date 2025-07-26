@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "https-proxy-agent": "^7.0.6"
+  }
+}
